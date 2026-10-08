@@ -55,7 +55,7 @@ a {
    ========================================== */
 
 header {
-  min-height: 86px;
+  min-height: 100px;
   padding: 10px 7vw;
   display: flex;
   align-items: center;
