@@ -259,5 +259,126 @@
 <div><b>OpenLab Systems</b><span>Turning open science into ready-to-use research systems.</span></div>
 <div class="copyright">&copy; 2026 MagBBB Group. All rights reserved.</div>
 </footer>
+<!-- BEHAVIOURCAM PRODUCT POP-UP -->
+
+<div id="behaviourcam-modal"
+     class="product-modal"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="behaviourcam-title"
+     hidden>
+
+  <div class="product-modal-content">
+
+    <button type="button"
+            class="product-modal-close"
+            onclick="closeBehaviourCam()"
+            aria-label="Close">
+      &times;
+    </button>
+
+    <h2 id="behaviourcam-title">BehaviourCam</h2>
+
+    <!-- Replace with a product photograph later -->
+    <div class="product-image-placeholder">
+      BehaviourCam system photograph coming soon
+    </div>
+
+    <p>
+      BehaviourCam is a modular, portable video recording
+      system for studying animal behaviour in laboratory
+      and field settings.
+    </p>
+
+    <h3>Main features and planned capabilities</h3>
+
+    <ol class="product-feature-list">
+      <li><strong>Multi-camera recording.</strong>
+        Supports recording from multiple cameras, with
+        four cameras in the configuration shown.</li>
+
+      <li><strong>Synchronised recording.</strong>
+        Can be configured to record an experiment
+        simultaneously from several cameras.</li>
+
+      <li><strong>Interchangeable cameras.</strong>
+        Camera options for daytime and night-time recording,
+        high frame rates or high resolution.</li>
+
+      <li><strong>Flexible hardware.</strong>
+        Built around Raspberry Pi 3, 4 or 5 computers.</li>
+
+      <li><strong>Graphical interface.</strong>
+        Control recording, adjust settings and view
+        a live camera preview.</li>
+
+      <li><strong>Local and remote control.</strong>
+        Operate using a connected screen or remotely
+        through a local network.</li>
+
+      <li><strong>Recording organisation.</strong>
+        Choose output folders, project and test names,
+        and saved settings profiles.</li>
+
+      <li><strong>Offline operation.</strong>
+        Control devices and transfer files without
+        internet access.</li>
+
+      <li><strong>Flexible power options.</strong>
+        Mains electricity, power banks, Power over Ethernet
+        or optional solar power.</li>
+
+      <li><strong>Portable design.</strong>
+        Compact carrying case for computers, screen,
+        batteries, network switch and cables.</li>
+    </ol>
+
+    <!-- ADD NEW FEATURES ABOVE THIS LINE -->
+
+    <p class="product-development-note">
+      Features and specifications are subject to
+      development and hardware configuration.
+    </p>
+
+    <a class="btn"
+       href="mailto:YOUR-EMAIL@example.com?subject=BehaviourCam%20enquiry">
+      Enquire about BehaviourCam
+    </a>
+
+  </div>
+</div>
+<script>
+function openBehaviourCam() {
+  const modal = document.getElementById(
+    "behaviourcam-modal"
+  );
+  modal.hidden = false;
+  document.body.style.overflow = "hidden";
+  modal.querySelector(".product-modal-close").focus();
+}
+
+function closeBehaviourCam() {
+  document.getElementById(
+    "behaviourcam-modal"
+  ).hidden = true;
+  document.body.style.overflow = "";
+}
+
+document.getElementById("behaviourcam-modal")
+  .addEventListener("click", function(event) {
+    if (event.target === this) {
+      closeBehaviourCam();
+    }
+  });
+
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape" &&
+      !document.getElementById(
+        "behaviourcam-modal"
+      ).hidden) {
+    closeBehaviourCam();
+  }
+});
+</script>        
 </body>
 </html>
