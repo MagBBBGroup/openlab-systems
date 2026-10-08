@@ -34,3 +34,50 @@ header {min-height:100px;height:auto;padding-top:12px;padding-bottom:12px;gap:20
 .site-logo {max-height:95px;}
 @media(max-width:900px){header{min-height:76px;}.site-logo{max-height:70px;}}
 @media(max-width:560px){header{min-height:70px;}.site-logo{max-height:58px;}}
+
+/* CUSTOM ENGINEERING - LIGHT CONTRAST SECTION */
+
+#custom {
+  background: #eaf3f1;
+  color: #334d58;
+  border-top: 5px solid #75c8bc;
+}
+
+#custom .eyebrow {
+  color: #177a78;
+}
+
+#custom h2 {
+  color: #17334b;
+}
+
+#custom p {
+  color: #405a63;
+}
+
+#custom ol {
+  margin: 0;
+  padding: 0;
+}
+
+#custom li {
+  border-bottom: 1px solid #c6d9d6;
+}
+
+#custom li b {
+  color: #147a75;
+}
+
+#custom li span {
+  color: #405a63;
+}
+
+/* Add visual separation to the Compute section */
+
+#compute {
+  border-bottom: 0;
+}
+
+#compute-workflow {
+  scroll-margin-top: 110px;
+}
