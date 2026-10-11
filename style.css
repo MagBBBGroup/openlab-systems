@@ -258,3 +258,10 @@ body.modal-open { overflow: hidden; }
 .purpose-panel .purpose-strapline{color:#126d69;font-weight:800;font-size:19px}
 section[id]{scroll-margin-top:110px}
 @media(max-width:560px){.purpose-panel{padding:22px}.hero-tagline{margin-top:0}section[id]{scroll-margin-top:85px}}
+
+/* Three laboratory products after removal of SensorGnome */
+#systems .grid.four {grid-template-columns:repeat(3,minmax(0,1fr));}
+#systems .grid.four > article {min-width:0;}
+.value > p:not(.eyebrow) {max-width:850px;font-size:17px;line-height:1.75;color:#d7e0e4;margin:0 0 25px;}
+@media(max-width:900px){#systems .grid.four{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:560px){#systems .grid.four{grid-template-columns:1fr;}}
